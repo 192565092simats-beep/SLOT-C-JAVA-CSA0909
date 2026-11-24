@@ -1,0 +1,24 @@
+==========================================================
+ TASK 10: Enforce Encapsulation through Packages & Modifiers
+==========================================================
+
+1. Allocating valid parking slots:
+  Staff Ticket:   Ticket[TKT-1001, Reg=TN01A1111, Pos=(0, 0), User=STAFF]
+  Visitor Ticket: Ticket[TKT-1002, Reg=TN02B2222, Pos=(0, 1), User=VISITOR]
+
+2. Validation Defense: Duplicate Registration Plate:
+  Caught expected validation error: Duplicate entry: Vehicle TN01A1111 is already inside facility
+
+3. Validation Defense: Negative Checkout Duration:
+  Caught expected validation error: Duration cannot be negative: -45
+
+4. Checkout Settlement:
+  Staff Fee (Monthly Pass Waiver):   Rs 0.00
+  Visitor Fee (2 hrs @ Rs 30/hr):    Rs 60.00
+
+--- Wrapper Classes & Autoboxing Comparison Risks ---
+Cached Integers (100 == 100): true (Reference equality: TRUE due to IntegerCache)
+Non-cached Integers (200 == 200 using '=='): false (Reference equality: FALSE! Risk of bug)
+Non-cached Integers (200.equals(200)):        true (Value equality: TRUE, always use .equals())
+Unboxing null Integer threw: NullPointerException (Autoboxing NPE hazard)
+==========================================================
