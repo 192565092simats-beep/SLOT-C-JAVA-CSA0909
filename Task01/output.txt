@@ -1,0 +1,20 @@
+==========================================================
+ TASK 1: Understand the Problem and Identify the Objects 
+==========================================================
+
+[Design A - OOP Model] Parked vehicles:
+  VehicleObject[regNo=TN01AB1111, type=CAR, entryTime=1000, owner=STAFF]
+  VehicleObject[regNo=TN02CD2222, type=TWO_WHEELER, entryTime=1020, owner=STUDENT]
+  VehicleObject[regNo=TN03EF3333, type=EV, entryTime=1045, owner=VISITOR]
+
+Search for 'TN02CD2222' in OOP: VehicleObject[regNo=TN02CD2222, type=TWO_WHEELER, entryTime=1020, owner=STUDENT]
+
+[Design B - Parallel Arrays] Search for 'TN02CD2222':
+  Found at index 1: regNo=TN02CD2222, type=TWO_WHEELER, entryTime=1020, owner=STUDENT
+
+Extensibility Comparison:
+  - OOP: Simply added field 'ownerCategory' to VehicleObject class.
+         All existing constructor/method references remain cohesive.
+  - Parallel Arrays: Required creating a brand-new array 'ownerCategories[]'
+         and updating every method signature, loop, resize, and indexing logic.
+==========================================================
