@@ -1,0 +1,18 @@
+==========================================================
+      TASK 6: Design the Inheritance Hierarchy            
+==========================================================
+
+--- Constructor Execution Trace: new ElectricCar("TN03C3", 50) ---
+    [1. Vehicle Constructor] Initializing regNo: TN03C3
+    [2. Car Constructor] Car instance ready.
+    [3. ElectricCar Constructor] ElectricCar ready with 50 kWh battery.
+
+Instance Details:
+  ElectricCar [regNo=TN03C3, rate=30.0/hr]
+  Parking fee for 130 min: Rs 90.0
+  Charging fee for 10 kWh: Rs 120.0
+
+--- Alternative: Composition Comparison ---
+  Composed vehicle created: TN02B2 (CAR)
+  Composed parking fee (130 min): Rs 90.0
+==========================================================
