@@ -1,0 +1,14 @@
+==========================================================
+  TASK 4: Design Classes, Objects and Constructors        
+==========================================================
+1. Default Ticket: Ticket[ID=TKT-0000, Reg=UNKNOWN, Pos=(F0, S0), Time=1795489646619, Paid=false]
+2. Chained Parameterised Ticket: Ticket[ID=TKT-1001, Reg=TN01AB1111, Pos=(F0, S1), Time=1795489646646, Paid=false]
+3. Copy-Constructed (Duplicate) Ticket: Ticket[ID=TKT-1001-DUP, Reg=TN01AB1111, Pos=(F0, S1), Time=1795489646646, Paid=false]
+   Are references identical? false (Correct: independent heap objects)
+   Do slots match? true
+4. Factory Created Ticket: Ticket[ID=TKT-1002, Reg=TN02CD2222, Pos=(F1, S0), Time=1795489646647, Paid=false]
+
+Memory Model Trace:
+  Stack: Stores local reference variables (chainedTicket, duplicateTicket).
+  Heap:  Stores the actual ParkingTicket instance payload and Strings.
+==========================================================
