@@ -1,0 +1,33 @@
+==========================================================
+    TASK 11: Implement, Test and Defend the Design        
+==========================================================
+
+[TEST GROUP 1] Normal Operation (Different vehicles entering & leaving):
+  Parked 3 vehicles successfully. Remaining slots: 1
+  Exit TN01A1000 (Two-Wheeler, 60m): Rs 10.0 (Expected: 10.0)
+  Exit TN02B2000 (Car, 120m):         Rs 60.0 (Expected: 60.0)
+  Exit TN03C3000 (EV, 90m + 10kWh):   Rs 180.0 (Expected: 180.0)
+
+[TEST GROUP 2] Boundary Cases:
+  Last free slot allocated: Ticket[TKT-1002 | TN10AA0002 | CAR | VISITOR | Floor 1 Slot 0]
+  Allocation when lot full: null (Expected: null)
+  Zero-minute parking fee: Rs 0.0 (Expected: 0.0)
+  Stay exactly at 60 min:  Rs 30.0 (Expected: 30.0)
+  Stay at 61 min (1 hr 1m): Rs 60.0 (Expected: 60.0)
+
+[TEST GROUP 3] Invalid Cases:
+  Duplicate regNo caught: Duplicate entry: Vehicle TN10AA0002 already parked
+  Non-existent ticket exit caught: Vehicle TN99NONEXISTENT not found in active parking
+  Negative duration caught: Duration cannot be negative
+
+[TEST GROUP 4] Hand-Calculated Daily Revenue Reconciliation:
+  Hand-Calculated Expected Total: Rs 310.0
+  System-Computed Actual Total:   Rs 310.0
+  Reconciliation Match: PASSED (100% Exact Match)
+
+[BENCHMARK] Active Tickets Storage Structure Comparison (Exit Search Time):
+  N = 50000 active parked vehicles (Worst-case exit search):
+    - Raw Array Linear Scan:    4585375 ns (O(N))
+    - ArrayList Linear Scan:    1280792 ns (O(N))
+    - HashMap O(1) Key Lookup:     8375 ns (O(1) - ~547x faster!)
+==========================================================
