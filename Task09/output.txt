@@ -1,0 +1,15 @@
+==========================================================
+         TASK 9: Introduce Abstraction                    
+==========================================================
+1. Interface Displayable & Default Methods:
+  Car [TN01AA1000] - Base Rate: Rs 30.00/hr
+  ElectricCar [TN02BB2000] - Base Rate: Rs 30.00/hr
+    Includes EV Capability: Fast Charging @ Rs 12.00/kWh
+
+2. Interface Payable & Polymorphic Processing:
+  [RECEIPT] Total Payable: Rs 90.00
+  [RECEIPT] Total Payable: Rs 270.00
+
+3. Interface Default Method (Charging Time Estimate):
+  Estimated time to charge from 10 kWh to 40 kWh: 81.8 minutes
+==========================================================
