@@ -1,0 +1,31 @@
+==========================================================
+  TASK 12: DAY-4 DESIGN CHALLENGE - RE-EVALUATE & ADAPT   
+==========================================================
+Facility Layout (5 Floors with Variable Slots):
+  Floor 0: Capacity = 30 slots | Occupied =  0 | Free = 30
+  Floor 1: Capacity = 25 slots | Occupied =  0 | Free = 25
+  Floor 2: Capacity = 20 slots | Occupied =  0 | Free = 20
+  Floor 3: Capacity = 15 slots | Occupied =  0 | Free = 15
+  Floor 4: Capacity = 10 slots | Occupied =  0 | Free = 10
+
+--- Testing New Vehicle Category 1: E-Bike (Flat Fee Rs 15) ---
+  EBike 30 min stay:   Rs 15.00 (Expected: Rs 15.00 flat)
+  EBike 480 min stay:  Rs 15.00 (Expected: Rs 15.00 flat)
+
+--- Testing New Vehicle Category 2: Delivery Van (Peak Hours Pricing) ---
+  Van Peak (10 AM entry, 2 hrs): Rs 120.00 (Expected: 2 * Rs 60 = Rs 120.00)
+  Van Off-Peak (7 PM entry, 2 hrs): Rs 60.00 (Expected: 2 * Rs 30 = Rs 60.00)
+
+--- Testing Visitor One-Day Pass Feature ---
+  Issued: OneDayPass[PASS-2026-001 | Holder: John Doe (Visitor) | Cost: Rs 100.0]
+  [PASS APPLIED] One-Day Pass active (PASS-2026-001). Hourly fee waived!
+  Exit fee with One-Day Pass: Rs 0.00 (Hourly charge fully waived)
+
+Final Facility Status:
+Facility Layout (5 Floors with Variable Slots):
+  Floor 0: Capacity = 30 slots | Occupied =  0 | Free = 30
+  Floor 1: Capacity = 25 slots | Occupied =  0 | Free = 25
+  Floor 2: Capacity = 20 slots | Occupied =  0 | Free = 20
+  Floor 3: Capacity = 15 slots | Occupied =  0 | Free = 15
+  Floor 4: Capacity = 10 slots | Occupied =  0 | Free = 10
+==========================================================
