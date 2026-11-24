@@ -1,0 +1,21 @@
+==========================================================
+     TASK 7: Override and Specialise Behaviour            
+==========================================================
+1. Overridden toString():
+   c1:  Car[TN02B2222, Rate=Rs 30.0/hr]
+   ev1: ElectricCar[TN02B2222, Rate=Rs 30.0/hr]
+
+2. Overridden equals() & hashCode() Consistency:
+   c1.equals(c2): true (Same plate, different case -> Equal)
+   c1.equals(ev1): true (Same plate across Vehicle hierarchy -> Equal)
+   c1.equals(c3): false (Different plates -> Not equal)
+   c1.hashCode() == c2.hashCode(): true
+   Elements in Set after adding c1, c2, ev1 (all TN02B2222) and c3: 2 (Correct: Deduplicated based on equals/hashCode)
+
+3. Method Overriding Execution:
+   c1 fee for 130 min: Rs 90.0
+   ev1 fee for 130 min + 10 kWh: Rs 210.0
+
+4. Monolithic switch comparison:
+   c1 fee via switch: Rs 90.0
+==========================================================
